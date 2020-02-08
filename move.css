@@ -1,0 +1,94 @@
+#box {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border: 5px solid black;
+    left: 30%;
+    top: 5%;
+}
+
+#circle{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border: 5px solid black;
+    border-radius: 100%;
+    left: 8%;
+    top: 8%;
+}
+
+.key{
+    height: 90px;
+    width: 90px;
+    border: 0.5px solid black;
+    cursor: pointer;
+}
+
+.up{
+    position: absolute;
+    left: 39%;
+    bottom: 40%;
+    text-align: center;
+}
+
+.down{
+    position: absolute;
+    left: 39%;
+    bottom: 15%;
+    text-align: center;
+}
+
+.left{
+    position: absolute;
+    left: 14%;
+    bottom: 15%;
+    text-align: center;
+}
+
+.right{
+    position: absolute;
+    right: 14%;
+    bottom: 15%;
+    text-align: center;
+}
+
+.up:before {
+     content: '\021D1';
+    font-size: 70px;
+}
+
+.down:before {
+     content: '\021D3';
+    font-size: 70px;
+}
+
+.left:before {
+    content: '\021D0';
+    font-size: 70px;
+}
+
+.right:before {
+     content: '\021D2';
+    font-size: 70px;
+}
+
+.up~div {
+    background-color: black;
+}
+
+.up+div{
+    color:White;
+}
+
+
+.down+div{
+    color:White;
+}
+
+.left+div{
+    color:White;
+}
+
+#box > div {
+    border: 3px solid black;
+}
